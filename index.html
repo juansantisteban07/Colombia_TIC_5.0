@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi experiencia asistiendo a Colombia TIC 5.0 - Evento de innovación y tecnología en Bogotá." />
+  <title>Colombia TIC 5.0 | Mi Experiencia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Ir al inicio">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">ColTIC <span>5.0</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#sobre-evento" class="nav-link" data-es="El Evento" data-en="The Event">El Evento</a></li>
+        <li><a href="#conferencias" class="nav-link" data-es="Conferencias" data-en="Conferences">Conferencias</a></li>
+        <li><a href="#galeria" class="nav-link" data-es="Galería" data-en="Gallery">Galería</a></li>
+        <li><a href="#temas" class="nav-link" data-es="Tecnologías" data-en="Technologies">Tecnologías</a></li>
+        <li><a href="#experiencia" class="nav-link" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+        <li><a href="#aprendizajes" class="nav-link" data-es="Aprendizajes" data-en="Learnings">Aprendizajes</a></li>
+        <li><a href="#etica" class="nav-link" data-es="Ética" data-en="Ethics">Ética</a></li>
+        <li><a href="glossary.html" class="nav-link nav-link--glossary">Glossary</a></li>
+        
+      </ul>
+      <button class="lang-switch" id="langSwitch" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-switch-flag">🇨🇴</span>
+        <span class="lang-switch-text">ES</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+  </nav>
+
+
+  <section class="hero" id="hero" aria-label="Sección principal">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span data-es="Bogotá, Colombia · 2026" data-en="Bogotá, Colombia · 2026">Bogotá, Colombia · 2026</span>
+      </div>
+      <h1 class="hero-title reveal">
+        <span data-es="Mi experiencia en" data-en="My experience at">Mi experiencia en</span><br />
+        <em>Colombia TIC 5.0</em>
+      </h1>
+      <p class="hero-subtitle reveal" data-es="Aprendizajes, innovación y tendencias tecnológicas desde Bogotá." data-en="Learnings, innovation and technology trends from Bogotá.">
+        Aprendizajes, innovación y tendencias tecnológicas desde Bogotá.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#sobre-evento" class="btn btn--primary">
+          <span data-es="Explorar experiencia" data-en="Explore experience">Explorar experiencia</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+        <a href="#galeria" class="btn btn--ghost" data-es="Ver galería" data-en="View gallery">Ver galería</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">50<sup>+</sup></span>
+          <span class="stat-label" data-es="Conferencistas" data-en="Speakers">Conferencistas</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">2K<sup>+</sup></span>
+          <span class="stat-label" data-es="Asistentes" data-en="Attendees">Asistentes</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label" data-es="Días de evento" data-en="Event days">Días de evento </span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <section class="section sobre-evento" id="sobre-evento" aria-labelledby="sobre-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="El Evento" data-en="The Event">El Evento</span>
+        <h2 class="section-title" id="sobre-titulo" data-es="¿Qué es Colombia TIC 5.0?" data-en="What is Colombia TIC 5.0?">¿Qué es Colombia TIC 5.0?</h2>
+        <p class="section-desc" data-es="El evento de tecnología e innovación más importante del país, reuniendo a líderes, empresas y visionarios del ecosistema digital colombiano." data-en="The most important technology and innovation event in the country, bringing together leaders, companies and visionaries of the Colombian digital ecosystem.">El evento de tecnología e innovación más importante del país, reuniendo a líderes, empresas y visionarios del ecosistema digital colombiano.</p>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-content reveal">
+          <p class="sobre-text" data-es="Colombia TIC 5.0 es el espacio donde convergen la academia, el gobierno, las empresas y los emprendedores para explorar el futuro digital de Colombia. Una plataforma de conocimiento, networking y transformación tecnológica sin precedentes." data-en="Colombia TIC 5.0 is the space where academia, government, companies and entrepreneurs converge to explore the digital future of Colombia. An unprecedented platform for knowledge, networking and technological transformation.">Colombia TIC 5.0 es el espacio donde convergen la academia, el gobierno, las empresas y los emprendedores para explorar el futuro digital de Colombia. Una plataforma de conocimiento, networking y transformación tecnológica sin precedentes.</p>
+          <div class="sobre-objetivos">
+            <h3 data-es="Objetivos del evento" data-en="Event Objectives">Objetivos del evento</h3>
+            <ul class="objetivos-list">
+              <li><span class="obj-icon" aria-hidden="true">◆</span><span data-es="Impulsar la transformación digital en el sector público y privado" data-en="Drive digital transformation in the public and private sector">Impulsar la transformación digital en el sector público y privado</span></li>
+              <li><span class="obj-icon" aria-hidden="true">◆</span><span data-es="Fomentar la adopción de tecnologías emergentes como IA, IoT y Cloud" data-en="Foster the adoption of emerging technologies such as AI, IoT and Cloud">Fomentar la adopción de tecnologías emergentes como IA, IoT y Cloud</span></li>
+              <li><span class="obj-icon" aria-hidden="true">◆</span><span data-es="Conectar talentos tech con oportunidades de empleo e inversión" data-en="Connect tech talents with employment and investment opportunities">Conectar talentos tech con oportunidades de empleo e inversión</span></li>
+              <li><span class="obj-icon" aria-hidden="true">◆</span><span data-es="Posicionar a Colombia como hub tecnológico de Latinoamérica" data-en="Position Colombia as a technology hub in Latin America">Posicionar a Colombia como hub tecnológico de Latinoamérica</span></li>
+            </ul>
+          </div>
+          <div class="sobre-info-cards">
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong data-es="Lugar" data-en="Venue">Lugar</strong>
+                <p>Corferias, Bogotá D.C.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">📅</span>
+              <div>
+                <strong data-es="Fecha" data-en="Date">Fecha</strong>
+                <p data-es="9 de mayo 2026" data-en="May 9, 2026">9 de mayo 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-visual reveal">
+          <div class="event-image-frame">
+            <div class="event-image-placeholder" role="img" aria-label="Imagen representativa del evento Colombia TIC 5.0">
+              <img src="img mp4/Corferias.jpeg" alt="Colombia TIC 5.0 - Corferias Bogotá" class="event-img" />
+              <div class="placeholder-inner placeholder-fallback">
+                <div class="placeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="38" stroke="var(--verde)" stroke-width="2" stroke-dasharray="6 4"/><circle cx="40" cy="40" r="8" fill="var(--verde)" opacity="0.3"/></svg>
+                </div>
+                <span>Colombia TIC 5.0</span>
+              </div>
+            </div>
+            <div class="frame-tag frame-tag--tl" aria-hidden="true">TECH</div>
+            <div class="frame-tag frame-tag--br" aria-hidden="true">2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section conferencias" id="conferencias" aria-labelledby="conf-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Conferencias" data-en="Conferences">Conferencias</span>
+        <h2 class="section-title" id="conf-titulo" data-es="Charlas Destacadas" data-en="Featured Talks">Charlas Destacadas</h2>
+        <p class="section-desc" data-es="Las ponencias que marcaron el evento y ampliaron mi visión sobre el futuro tecnológico." data-en="The talks that marked the event and broadened my vision of the technological future.">Las ponencias que marcaron el evento y ampliaron mi visión sobre el futuro tecnológico.</p>
+      </div>
+      <div class="conferencias-grid">
+
+        <!-- CONFERENCIA 1 -->
+        <article class="conf-card reveal" tabindex="0">
+          <div class="conf-card-img" role="img" aria-label="Conferencia IA en la animación">
+            <div class="conf-img-placeholder conf-img--1">
+              <img src="img mp4/conferencia 1.jpeg" alt="Conferencia IA en la animación" class="conf-img" />
+              <svg class="conf-svg-fallback" viewBox="0 0 60 60" fill="none" aria-hidden="true"><rect x="10" y="15" width="40" height="30" rx="4" stroke="white" stroke-width="1.5"/><path d="M20 30h20M25 24l5 6 5-6" stroke="white" stroke-width="1.5"/></svg>
+            </div>
+            <div class="conf-category" data-es="IA en la Animación" data-en="AI in Animation">IA en la Animación</div>
+          </div>
+          <div class="conf-card-body">
+            <h3 class="conf-title" data-es="La IA en la animación" data-en="AI in Animation">La IA en la animación</h3>
+            <p class="conf-speaker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span data-es="Julia Tiscornia — Productora senior en animación" data-en="Julia Tiscornia — Senior Animation Producer">Julia Tiscornia — Productora senior en animación</span>
+            </p>
+            <p class="conf-desc" data-es="Exploración de cómo los modelos de lenguaje y la IA aportan en el trabajo de la animación en producciones como Metegol o Mafalda." data-en="Exploration of how language models and AI contribute to animation work in productions such as Metegol or Mafalda.">Exploración de cómo los modelos de lenguaje y la IA aportan en el trabajo de la animación en producciones como Metegol o Mafalda.</p>
+            <div class="conf-keywords">
+              <span class="keyword-tag" data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</span>
+              <span class="keyword-tag" data-es="Animación" data-en="Animation">Animación</span>
+              <span class="keyword-tag" data-es="IA Generativa" data-en="Generative AI">IA Generativa</span>
+              <span class="keyword-tag" data-es="Producción" data-en="Production">Producción</span>
+            </div>
+            <div class="conf-learnings">
+              <span class="learnings-label" data-es="Aprendizajes:" data-en="Key Learnings:">Aprendizajes:</span>
+              <ul>
+                <li data-es="Implementación ética de IA en empresas creativas" data-en="Ethical implementation of AI in creative companies">Implementación ética de IA en empresas creativas</li>
+                <li data-es="Casos de uso reales en el contexto latinoamericano" data-en="Real use cases in the Latin American context">Casos de uso reales en el contexto latinoamericano</li>
+                <li data-es="¿La IA puede reemplazar al animador?" data-en="Can AI replace the animator?">¿La IA puede reemplazar al animador?</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- CONFERENCIA 2 -->
+        <article class="conf-card reveal" tabindex="0">
+          <div class="conf-card-img" role="img" aria-label="Conferencia de Ciberseguridad">
+            <div class="conf-img-placeholder conf-img--2">
+              <img src="img mp4/conferencia 2.jpeg" alt="Conferencia Ciberseguridad" class="conf-img" />
+              <svg class="conf-svg-fallback" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 10 L46 17 L46 28 C46 38 38.5 46.5 30 50 C21.5 46.5 14 38 14 28 L14 17 Z" stroke="white" stroke-width="1.5" fill="none"/><path d="M23 30l5 5 9-10" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <div class="conf-category" data-es="Ciberseguridad" data-en="Cybersecurity">Robótica y Hardware libre </div>
+          </div>
+          <div class="conf-card-body">
+            <h3 class="conf-title" data-es="Ciberamenazas 2025: Estrategias de Defensa Digital" data-en="Cyber Threats 2025: Digital Defense Strategies">Robotica y Hadware libre: Soberania tecnológica desde la educación</h3>
+            <p class="conf-speaker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span data-es="Ing. Carlos Eduardo Vargas" data-en="Eng. Carlos Eduardo Vargas">Prof. Javier Garzón</span>
+            </p>
+            <p class="conf-desc" data-es="Análisis del panorama actual de amenazas cibernéticas en Colombia y Latinoamérica, con énfasis en estrategias proactivas de defensa y cumplimiento normativo." data-en="Analysis of the current cyberthreat landscape in Colombia and Latin America, with emphasis on proactive defense strategies and regulatory compliance.">Análisis del multiples componentes de robotica, y software en la educación ademas conocer multiples tecnologias libres</p>
+            <div class="conf-keywords">
+              <span class="keyword-tag" data-es="Ciberseguridad" data-en="Cybersecurity">Robotica</span>
+              <span class="keyword-tag">Hadware</span>
+              <span class="keyword-tag">Arduinos</span>
+              <span class="keyword-tag">Educación</span>
+            </div>
+            <div class="conf-learnings">
+              <span class="learnings-label" data-es="Aprendizajes:" data-en="Key Learnings:">Aprendizajes:</span>
+              <ul>
+                <li data-es="Cómo protegerse de ataques cibernéticos" data-en="How to protect yourself from cyberattacks">Cómo la educación permite nuevos concimientos tecnologicos</li>
+                <li data-es="Gestión de vulnerabilidades críticas" data-en="Critical vulnerability management">Gestión de Arduinos y Software</li>
+                <li data-es="Cultura de seguridad organizacional" data-en="Organizational security culture">Tecnologias libres</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- CONFERENCIA 3 -->
+        <article class="conf-card reveal" tabindex="0">
+          <div class="conf-card-img" role="img" aria-label="Conferencia Marketing de Videojuegos">
+            <div class="conf-img-placeholder conf-img--3">
+              <img src="img mp4/conferencia 3.jpeg" alt="Conferencia Marketing de Videojuegos" class="conf-img" />
+              <svg class="conf-svg-fallback" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M42 35a8 8 0 0 0-8-8 11 11 0 0 0-20 3.5A7 7 0 0 0 18 44h24a6 6 0 0 0 0-9z" stroke="white" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div class="conf-category" data-es="Marketing de Videojuegos" data-en="Video Game Marketing">Marketing de Videojuegos</div>
+          </div>
+          <div class="conf-card-body">
+            <h3 class="conf-title" data-es="Los videojuegos y las estrategias para la empresa moderna" data-en="Video Games and Strategies for the Modern Company">Los videojuegos y las estrategias para la empresa moderna</h3>
+            <p class="conf-speaker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span> Mariana Rosa BidinostDirectora de Operaciones Comerciales por Loopr Marketing</span>
+            </p>
+            <p class="conf-desc" data-es="Cómo publicitar los videojuegos que las nuevas empresas o pequeños proyectos realizan al mundo tecnológico." data-en="How to advertise video games that new companies or small projects create for the technology world.">Cómo publicitar los videojuegos que las nuevas empresas o pequeños proyectos realizan al mundo tecnológico.</p>
+            <div class="conf-keywords">
+              <span class="keyword-tag" data-es="Marketing Digital" data-en="Digital Marketing">Marketing Digital</span>
+              <span class="keyword-tag" data-es="Videojuegos" data-en="Video Games">Videojuegos</span>
+              <span class="keyword-tag" data-es="Redes Sociales" data-en="Social Media">Redes Sociales</span>
+              <span class="keyword-tag">Startup</span>
+            </div>
+            <div class="conf-learnings">
+              <span class="learnings-label" data-es="Aprendizajes:" data-en="Key Learnings:">Aprendizajes:</span>
+              <ul>
+                <li data-es="Estrategias de marketing digital" data-en="Digital marketing strategies">Estrategias de marketing digital</li>
+                <li data-es="Redes sociales para su promoción" data-en="Social media for promotion">Redes sociales para su promoción</li>
+                <li data-es="Publicidad paga y orgánica" data-en="Paid and organic advertising">Publicidad paga y orgánica</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- CONFERENCIA 4 -->
+        <article class="conf-card reveal" tabindex="0">
+          <div class="conf-card-img" role="img" aria-label="Conferencia de Transformación Digital">
+            <div class="conf-img-placeholder conf-img--4">
+              <img src="img mp4/galeria 2.jpeg" alt="Conferencia Transformación Digital" class="conf-img" />
+              <svg class="conf-svg-fallback" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M15 30 C15 22 22 15 30 15" stroke="white" stroke-width="1.5"/><path d="M45 30 C45 38 38 45 30 45" stroke="white" stroke-width="1.5"/><circle cx="30" cy="30" r="6" stroke="white" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div class="conf-category" data-es="Transformación Digital" data-en="Digital Transformation">Transformación Digital</div>
+          </div>
+          <div class="conf-card-body">
+            <h3 class="conf-title" data-es="Transformación Digital en el Sector Público Colombiano" data-en="Digital Transformation in the Colombian Public Sector">Diseña con alma, demuéstralo con datos: cómo destacar en un mercado saturado</h3>
+            <p class="conf-speaker">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Constantino Valenzuela González Lead Level Designer de HalberdStudios</span>
+            </p>
+            <p class="conf-desc" data-es="Revisión del avance en digitalización de servicios gubernamentales e interoperabilidad entre entidades del Estado colombiano." data-en="Review of the progress in digitalization of government services and interoperability between Colombian State entities.">Revisión del avance en digitalización y como sobresalir en un mercado saturado.</p>
+            <div class="conf-keywords">
+              <span class="keyword-tag" data-es="Gobierno Digital" data-en="Digital Government">Gobierno Digital</span>
+              <span class="keyword-tag" data-es="Interoperabilidad" data-en="Interoperability">Interoperabilidad</span>
+              <span class="keyword-tag">Marketing</span>
+              <span class="keyword-tag" data-es="Inclusión Digital" data-en="Digital Inclusion">Inclusión Digital</span>
+            </div>
+            <div class="conf-learnings">
+              <span class="learnings-label" data-es="Aprendizajes:" data-en="Key Learnings:">Aprendizajes:</span>
+              <ul>
+                <li data-es="Gobierno digital y servicios ciudadanos" data-en="Digital government and citizen services">Gobierno digital y servicios ciudadanos</li>
+                <li data-es="Interoperabilidad de sistemas estatales" data-en="Interoperability of state systems">Interoperabilidad de sistemas estatales</li>
+                <li data-es="Inclusión digital y brecha tecnológica" data-en="Digital inclusion and the technology gap">Inclusión digital y brecha tecnológica</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section class="section galeria" id="galeria" aria-labelledby="gal-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Fotos" data-en="Photos">Fotos</span>
+        <h2 class="section-title" id="gal-titulo" data-es="Galería Fotográfica" data-en="Photo Gallery">Galería Fotográfica</h2>
+        <p class="section-desc" data-es="Momentos capturados durante el evento que retratan la energía e innovación de Colombia TIC 5.0." data-en="Moments captured during the event that portray the energy and innovation of Colombia TIC 5.0.">Momentos capturados durante el evento que retratan la energía e innovación de Colombia TIC 5.0.</p>
+      </div>
+      <div class="gallery-grid reveal" role="list">
+        <button class="gallery-item gallery-item--large" data-index="0" aria-label="Ver foto 1 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="Apertura del Evento" data-label-en="Event Opening">
+            <img src="img mp4/conferencia 4.jpeg" alt="Apertura del Evento" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Apertura del Evento" data-en="Event Opening">Apertura del Evento</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+
+        <button class="gallery-item" data-index="1" aria-label="Ver foto 2 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="Sala Principal" data-label-en="Main Hall">
+            <img src="img mp4/galeria 5.jpeg" alt="Sala Principal" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Sala Principal" data-en="Main Hall">Sala Principal</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+
+        <button class="gallery-item" data-index="2" aria-label="Ver foto 3 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="conferencias" data-label-en="Conference Room">
+            <img src="img mp4/galeria 7.jpeg" alt="Sala de conferencias" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Sala de conferencias" data-en="Conference Room">Sala de conferencias</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+
+        <button class="gallery-item" data-index="3" aria-label="Ver foto 4 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="Zona de juegos" data-label-en="Gaming Zone">
+            <img src="img mp4/galeria 10.jpeg" alt="Zona de juegos" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Zona de juegos" data-en="Gaming Zone">Zona de juegos</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+
+        <button class="gallery-item gallery-item--large" data-index="4" aria-label="Ver foto 5 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="Con los panas" data-label-en="With the crew">
+            <img src="img mp4/foto grupal.jpeg" alt="Con los panas" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Con los panas" data-en="With the crew">Con los panas</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+
+        <button class="gallery-item" data-index="5" aria-label="Ver foto 6 ampliada" role="listitem">
+          <div class="gallery-placeholder" data-label="Robot" data-label-en="Robot">
+            <img src="img mp4/robot.png" alt="Robot Colombia TIC 5.0" class="gallery-img" />
+            <div class="gal-fallback" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/><rect x="18" y="6" width="12" height="6" rx="2" stroke="white" stroke-width="1.5"/></svg>
+              <span data-es="Robot" data-en="Robot">Robot</span>
+            </div>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true"><span data-es="Ver foto" data-en="View photo">Ver foto</span></div>
+        </button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+      <button class="modal-close" id="modalClose" aria-label="Cerrar imagen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-placeholder" id="modalPlaceholder" aria-live="polite">
+          <div class="modal-img-inner">
+            <div class="gal-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="white" stroke-width="1.5"/><circle cx="24" cy="24" r="7" stroke="var(--verde)" stroke-width="1.5"/></svg></div>
+            <p id="modalLabel">Foto del evento</p>
+          </div>
+        </div>
+      </div>
+      <button class="modal-nav modal-nav--prev" id="modalPrev" aria-label="Foto anterior">&#8592;</button>
+      <button class="modal-nav modal-nav--next" id="modalNext" aria-label="Foto siguiente">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- ===== TEMAS ===== -->
+  <section class="section temas" id="temas" aria-labelledby="temas-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Tecnologías" data-en="Technologies">Tecnologías</span>
+        <h2 class="section-title" id="temas-titulo" data-es="Temas Abordados" data-en="Topics Covered">Temas Abordados</h2>
+        <p class="section-desc" data-es="Las áreas tecnológicas que definieron las conversaciones y debates del evento." data-en="The technological areas that defined the event's conversations and debates.">Las áreas tecnológicas que definieron las conversaciones y debates del evento.</p>
+      </div>
+      <!-- Fila 1: 4 tarjetas -->
+      <div class="temas-grid">
+        <article class="tema-card reveal" tabindex="0">
+          <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M16 28l4-8 4 6 4-4 4 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="16" cy="20" r="2" fill="currentColor"/></svg></div>
+          <h3 data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</h3>
+          <p data-es="Modelos generativos, automatización y toma de decisiones inteligente para negocios." data-en="Generative models, automation and intelligent decision-making for businesses.">Modelos generativos, automatización y toma de decisiones inteligente para negocios.</p>
+        </article>
+        <article class="tema-card reveal" tabindex="0">
+          <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><path d="M24 10 L36 17 L36 28 C36 35 30.5 41 24 44 C17.5 41 12 35 12 28 L12 17 Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M19 27l4 4 6-8" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3 data-es="Ciberseguridad" data-en="Cybersecurity">Ciberseguridad</h3>
+          <p data-es="Protección de infraestructuras críticas y activos digitales frente a amenazas avanzadas." data-en="Protection of critical infrastructure and digital assets against advanced threats.">Protección de infraestructuras críticas y activos digitales frente a amenazas avanzadas.</p>
+        </article>
+        <article class="tema-card reveal" tabindex="0">
+          <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><path d="M8 28l8-8 8 8 8-8 8 8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 36h32" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="14" width="8" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3 data-es="Transformación Digital" data-en="Digital Transformation">Transformación Digital</h3>
+          <p data-es="Estrategias para evolucionar organizaciones hacia modelos digitales eficientes." data-en="Strategies to evolve organizations towards efficient digital models.">Estrategias para evolucionar organizaciones hacia modelos digitales eficientes.</p>
+        </article>
+        <article class="tema-card reveal" tabindex="0">
+          <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><path d="M24 8 L24 16 M24 32 L24 40 M8 24 L16 24 M32 24 L40 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg></div>
+          <h3 data-es="Animación" data-en="Animation">Animación</h3>
+          <p data-es="Animación y la IA en su producción creativa." data-en="Animation and AI in its creative production.">Animación y la IA en su producción creativa.</p>
+        </article>
+        <!-- Fila 2: 3 centradas -->
+        <div class="temas-row-2">
+          <article class="tema-card reveal" tabindex="0">
+            <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><path d="M12 36V22l12-10 12 10v14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="20" y="28" width="8" height="8" stroke="currentColor" stroke-width="1.5"/><path d="M18 22h12" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <h3 data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h3>
+            <p data-es="Frontend, backend y arquitecturas modernas de próxima generación." data-en="Frontend, backend and modern next-generation architectures.">Frontend, backend y arquitecturas modernas de próxima generación.</p>
+          </article>
+          <article class="tema-card reveal" tabindex="0">
+            <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="38" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="32" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="38" cy="32" r="3" stroke="currentColor" stroke-width="1.5"/><line x1="13" y1="17" x2="19" y2="21" stroke="currentColor" stroke-width="1"/><line x1="35" y1="17" x2="29" y2="21" stroke="currentColor" stroke-width="1"/><line x1="13" y1="31" x2="19" y2="27" stroke="currentColor" stroke-width="1"/><line x1="35" y1="31" x2="29" y2="27" stroke="currentColor" stroke-width="1"/></svg></div>
+            <h3 data-es="Internet de las Cosas" data-en="Internet of Things">Internet de las Cosas</h3>
+            <p data-es="Dispositivos conectados, ciudades inteligentes e industria 4.0." data-en="Connected devices, smart cities and industry 4.0.">Dispositivos conectados, ciudades inteligentes e industria 4.0.</p>
+          </article>
+          <article class="tema-card reveal" tabindex="0">
+            <div class="tema-icon-wrap" aria-hidden="true"><svg class="tema-icon" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="20" rx="14" ry="6" stroke="currentColor" stroke-width="1.5"/><path d="M10 20v8c0 3.3 6.3 6 14 6s14-2.7 14-6v-8" stroke="currentColor" stroke-width="1.5"/><path d="M10 24c0 3.3 6.3 6 14 6s14-2.7 14-6" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/></svg></div>
+            <h3 data-es="Big Data" data-en="Big Data">Big Data</h3>
+            <p data-es="Análisis masivo de datos, analítica predictiva y toma de decisiones estratégicas." data-en="Massive data analysis, predictive analytics and strategic decision-making.">Análisis masivo de datos, analítica predictiva y toma de decisiones estratégicas.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCIA ===== -->
+  <section class="section experiencia" id="experiencia" aria-labelledby="exp-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Personal" data-en="Personal Experience">Personal</span>
+        <h2 class="section-title" id="exp-titulo" data-es="Mi Experiencia" data-en="My Experience">Mi Experiencia</h2>
+      </div>
+      <div class="experiencia-layout">
+        <div class="experiencia-photo reveal">
+          <div class="photo-frame">
+
+            <div class="photo-placeholder" role="img" aria-label="Fotografía personal en el evento">
+              <img src="img mp4/foto grupal.jpeg" alt="Juan Sebastian Diaz Santisteban en Colombia TIC 5.0" class="photo-img" />
+              <div class="photo-inner photo-fallback">
+                <svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="40" cy="30" r="18" stroke="var(--verde)" stroke-width="1.5"/><path d="M10 74c0-16.6 13.4-30 30-30s30 13.4 30 30" stroke="var(--verde)" stroke-width="1.5"/></svg>
+                <span data-es="Mi foto en el evento" data-en="My photo at the event">Mi foto en el evento</span>
+              </div>
+            </div>
+            <div class="photo-badge" aria-hidden="true"><span>🎯</span> <span data-es="Asistentes" data-en="Attendee">Asistentes</span></div>
+          </div>
+        </div>
+        <div class="experiencia-content reveal">
+          <blockquote class="exp-quote">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <span data-es="Colombia TIC 5.0 fue más que un evento tecnológico — fue un punto de inflexión en mi visión sobre el futuro digital del país." data-en="Colombia TIC 5.0 was more than a technology event — it was a turning point in my vision of the country's digital future.">Colombia TIC 5.0 fue más que un evento tecnológico — fue un punto de inflexión en mi visión sobre el futuro digital del país.</span>
+          </blockquote>
+          <p data-es="Llegar a Corferias y ver a miles de personas apasionadas por la tecnología reunidas en un mismo lugar fue algo bueno de ver. Desde el primer momento sentí que estaba siendo parte de algo que apasiona y ayuda para el ecosistema tecnológico colombiano." data-en="Arriving at Corferias and seeing thousands of people passionate about technology gathered in one place was something great to witness. From the very first moment I felt I was part of something that inspires the Colombian technology ecosystem.">Llegar a Corferias y ver a miles de personas apasionadas por la tecnología reunidas en un mismo lugar fue algo bueno de ver. Desde el primer momento sentí que estaba siendo parte de algo que apasiona y ayuda para el ecosistema tecnológico colombiano.</p>
+          <p data-es="Durante el día recorrí stands, asistí a conferencias, participé en talleres prácticos y tuve la oportunidad de conversar con profesionales de todo el país." data-en="During the day I visited stands, attended conferences, participated in practical workshops and had the opportunity to talk with professionals from all over the country.">Durante el día recorrí stands, asistí a conferencias, participé en talleres prácticos y tuve la oportunidad de conversar con profesionales de todo el país.</p>
+          <p data-es="Lo que más me sorprendió fue la diversidad de temas y participantes: desde estudiantes universitarios hasta directivos de grandes corporaciones, todos unidos por la misma pasión por la innovación y la tecnología." data-en="What surprised me most was the diversity of topics and participants: from university students to executives of large corporations, all united by the same passion for innovation and technology.">Lo que más me sorprendió fue la diversidad de temas y participantes: desde estudiantes universitarios hasta directivos de grandes corporaciones, todos unidos por la misma pasión por la innovación y la tecnología.</p>
+          <div class="exp-highlights">
+            <div class="highlight"><span class="highlight-num">2</span><span class="highlight-text" data-es="Días de inmersión tecnológica" data-en="Days of tech immersion">Días de inmersión tecnológica</span></div>
+            <div class="highlight"><span class="highlight-num">12+</span><span class="highlight-text" data-es="Conferencias presenciadas" data-en="Conferences attended">Conferencias presenciadas</span></div>
+            <div class="highlight"><span class="highlight-num">∞</span><span class="highlight-text" data-es="Conexiones e inspiración" data-en="Connections & inspiration">Conexiones e inspiración</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APRENDIZAJES ===== -->
+  <section class="section aprendizajes" id="aprendizajes" aria-labelledby="apr-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Reflexión" data-en="Reflection">Reflexión</span>
+        <h2 class="section-title" id="apr-titulo" data-es="Aprendizajes y Conclusiones" data-en="Learnings & Conclusions">Aprendizajes y Conclusiones</h2>
+        <p class="section-desc" data-es="Los conocimientos más valiosos que me llevé de Colombia TIC 5.0." data-en="The most valuable knowledge I took from Colombia TIC 5.0.">Los conocimientos más valiosos que me llevé de Colombia TIC 5.0.</p>
+      </div>
+      <div class="timeline" role="list">
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">01</div>
+          <div class="timeline-content">
+            <h3 data-es="La IA no reemplaza, transforma" data-en="AI doesn't replace, it transforms">La IA no reemplaza, transforma</h3>
+            <p data-es="Aprendí que la inteligencia artificial no viene a quitarles el trabajo a las personas, sino a potenciar sus capacidades. Los profesionales que sepan colaborar con IA serán los más valiosos en el mercado laboral del futuro." data-en="I learned that artificial intelligence does not come to take people's jobs, but to enhance their capabilities. Professionals who know how to collaborate with AI will be the most valuable in the future job market.">Aprendí que la inteligencia artificial no viene a quitarles el trabajo a las personas, sino a potenciar sus capacidades. Los profesionales que sepan colaborar con IA serán los más valiosos en el mercado laboral del futuro.</p>
+            <span class="timeline-tag" data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">02</div>
+          <div class="timeline-content">
+            <h3 data-es="La seguridad es responsabilidad de todos" data-en="Security is everyone's responsibility">La seguridad es responsabilidad de todos</h3>
+            <p data-es="La ciberseguridad no es un tema exclusivo de los equipos de TI. Comprendí que construir una cultura de seguridad digital en las organizaciones es tan importante como implementar las herramientas técnicas adecuadas." data-en="Cybersecurity is not an exclusive topic for IT teams. I understood that building a digital security culture in organizations is as important as implementing the right technical tools.">La ciberseguridad no es un tema exclusivo de los equipos de TI. Comprendí que construir una cultura de seguridad digital en las organizaciones es tan importante como implementar las herramientas técnicas adecuadas.</p>
+            <span class="timeline-tag" data-es="Ciberseguridad" data-en="Cybersecurity">Ciberseguridad</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">03</div>
+          <div class="timeline-content">
+            <h3 data-es="Colombia tiene un talento tech extraordinario" data-en="Colombia has extraordinary tech talent">Colombia tiene un talento tech extraordinario</h3>
+            <p data-es="Ver la calidad de los profesionales e innovadores colombianos me llenó de orgullo y motivación. El ecosistema tecnológico nacional está madurando a pasos agigantados." data-en="Seeing the quality of Colombian professionals and innovators filled me with pride and motivation. The national technology ecosystem is maturing by leaps and bounds.">Ver la calidad de los profesionales e innovadores colombianos me llenó de orgullo y motivación. El ecosistema tecnológico nacional está madurando a pasos agigantados.</p>
+            <span class="timeline-tag" data-es="Ecosistema" data-en="Ecosystem">Ecosistema</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal" role="listitem">
+          <div class="timeline-marker" aria-hidden="true">04</div>
+          <div class="timeline-content">
+            <h3 data-es="El futuro se construye hoy" data-en="The future is built today">El futuro se construye hoy</h3>
+            <p data-es="Colombia TIC 5.0 me demostró que Colombia está lista para liderar la transformación digital de Latinoamérica. Yo quiero ser parte de esa historia." data-en="Colombia TIC 5.0 showed me that Colombia is ready to lead the digital transformation of Latin America. I want to be part of that story.">Colombia TIC 5.0 me demostró que Colombia está lista para liderar la transformación digital de Latinoamérica. Yo quiero ser parte de esa historia.</p>
+            <span class="timeline-tag" data-es="Conclusión" data-en="Conclusion">Conclusión</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÉTICA ===== -->
+  <section class="section etica" id="etica" aria-labelledby="etica-titulo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-es="Conclusión Ética" data-en="Ethical Conclusion">Conclusión Ética</span>
+        <h2 class="section-title" id="etica-titulo" data-es="¿Cómo se implementa la ética en la tecnología empresarial?" data-en="How is ethics implemented in business technology?">¿Cómo se implementa la ética en la tecnología empresarial?</h2>
+      </div>
+      <div class="etica-grid">
+        <div class="etica-card reveal">
+          <div class="etica-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M16 28l4-8 4 6 4-4 4 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+          <h3 data-es="Inteligencia Artificial" data-en="Artificial Intelligence">Inteligencia Artificial</h3>
+          <p data-es="La IA debe diseñarse con principios de transparencia, equidad y responsabilidad. Los sistemas automatizados deben ser auditables y sus decisiones explicables para los seres humanos." data-en="AI must be designed with principles of transparency, fairness and accountability. Automated systems must be auditable and their decisions explainable to humans.">La IA debe diseñarse con principios de transparencia, equidad y responsabilidad. Los sistemas automatizados deben ser auditables y sus decisiones explicables para los seres humanos.</p>
+        </div>
+        <div class="etica-card reveal">
+          <div class="etica-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="20" rx="14" ry="6" stroke="currentColor" stroke-width="1.5"/><path d="M10 20v8c0 3.3 6.3 6 14 6s14-2.7 14-6v-8" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3 data-es="Uso responsable de datos" data-en="Responsible Use of Data">Uso responsable de datos</h3>
+          <p data-es="Los datos personales son un activo sensible. Las organizaciones tienen la obligación ética y legal de protegerlos y usarlos únicamente para los fines acordados con el usuario." data-en="Personal data is a sensitive asset. Organizations have the ethical and legal obligation to protect it and use it only for purposes agreed upon with the user.">Los datos personales son un activo sensible. Las organizaciones tienen la obligación ética y legal de protegerlos y usarlos únicamente para los fines acordados con el usuario.</p>
+        </div>
+        <div class="etica-card reveal">
+          <div class="etica-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 10v6M24 32v6M10 24h6M32 24h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M20 24l3 3 5-5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3 data-es="Automatización" data-en="Automation">Automatización</h3>
+          <p data-es="La automatización crea eficiencia, pero también genera impactos sociales. Es responsabilidad de los desarrolladores proponer soluciones que incluyan a las personas afectadas mediante reconversión y aprendizaje continuo." data-en="Automation creates efficiency but also generates social impacts. It is the responsibility of developers to propose solutions that include affected people through retraining and continuous learning.">La automatización crea eficiencia, pero también genera impactos sociales. Es responsabilidad de los desarrolladores proponer soluciones que incluyan a las personas afectadas mediante reconversión y aprendizaje continuo.</p>
+        </div>
+        <div class="etica-card reveal">
+          <div class="etica-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 10 L36 17 L36 28 C36 35 30.5 41 24 44 C17.5 41 12 35 12 28 L12 17 Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M19 27l4 4 6-8" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3 data-es="Impacto social" data-en="Social Impact">Impacto social</h3>
+          <p data-es="Como futuros desarrolladores de software, tenemos la responsabilidad de construir herramientas que reduzcan la brecha digital, promuevan la inclusión y mejoren la calidad de vida de los colombianos." data-en="As future software developers, we have the responsibility to build tools that reduce the digital divide, promote inclusion and improve the quality of life of Colombians.">Como futuros desarrolladores de software, tenemos la responsabilidad de construir herramientas que reduzcan la brecha digital, promuevan la inclusión y mejoren la calidad de vida de los colombianos.</p>
+        </div>
+      </div>
+      <div class="etica-reflexion reveal">
+        <div class="reflexion-inner">
+          <span class="reflexion-icon" aria-hidden="true">💡</span>
+          <div>
+            <h3 data-es="Mi reflexión personal" data-en="My Personal Reflection">Mi reflexión personal</h3>
+            <p data-es="Colombia TIC 5.0 me enseñó que la tecnología, sin ética, es solo una herramienta poderosa sin dirección. Como estudiante de ADSO en el SENA, entiendo que mi rol no es solo escribir código funcional, sino construir soluciones responsables que respeten a las personas, protejan sus datos y contribuyan positivamente a la sociedad colombiana." data-en="Colombia TIC 5.0 taught me that technology, without ethics, is just a powerful tool without direction. As an ADSO student at SENA, I understand that my role is not just to write functional code, but to build responsible solutions that respect people, protect their data and contribute positively to Colombian society.">Colombia TIC 5.0 me enseñó que la tecnología, sin ética, es solo una herramienta poderosa sin dirección. Como estudiante de ADSO en el SENA, entiendo que mi rol no es solo escribir código funcional, sino construir soluciones responsables que respeten a las personas, protejan sus datos y contribuyan positivamente a la sociedad colombiana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-bg" aria-hidden="true">
+      <div class="footer-orb footer-orb--1"></div>
+      <div class="footer-orb footer-orb--2"></div>
+    </div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">ColTIC <span>5.0</span></span>
+        </div>
+        <p class="footer-tagline" data-es="Memoria digital de una experiencia que transforma." data-en="Digital memory of a transforming experience.">Memoria digital de una experiencia que transforma.</p>
+      </div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <p class="footer-author"><span data-es="Desarrollado por" data-en="Developed by">Desarrollado por</span> <strong>Juan Sebastian Diaz Santisteban</strong></p>
+          <p class="footer-program">ANÁLISIS Y DESARROLLO DE SOFTWARE · SENA ADSO · 2026</p>
+        </div>
+        <a href="glossary.html" class="btn btn--ghost footer-glossary-btn" data-es="Ver Glossary →" data-en="View Glossary →">Ver Glossary →</a>
+      </div>
+      <p class="footer-copy" data-es="© 2026 · Página realizada con fines académicos · Colombia TIC 5.0" data-en="© 2026 · Page created for academic purposes · Colombia TIC 5.0">© 2026 · Página realizada con fines académicos · Colombia TIC 5.0</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

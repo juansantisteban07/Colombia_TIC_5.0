@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glosario técnico bilingüe - Colombia TIC 5.0" />
+  <title>Glossary | Colombia TIC 5.0</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Volver al inicio">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">ColTIC <span>5.0</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="index.html#sobre-evento" class="nav-link" data-es="El Evento"     data-en="The Event">El Evento</a></li>
+        <li><a href="index.html#conferencias" class="nav-link" data-es="Conferencias"  data-en="Conferences">Conferencias</a></li>
+        <li><a href="index.html#galeria"      class="nav-link" data-es="Galería"       data-en="Gallery">Galería</a></li>
+        <li><a href="index.html#temas"        class="nav-link" data-es="Tecnologías"   data-en="Technologies">Tecnologías</a></li>
+        <li><a href="index.html#experiencia"  class="nav-link" data-es="Experiencia"   data-en="Experience">Experiencia</a></li>
+        <li><a href="index.html#aprendizajes" class="nav-link" data-es="Aprendizajes"  data-en="Learnings">Aprendizajes</a></li>
+        <li><a href="index.html#etica"        class="nav-link" data-es="Ética"         data-en="Ethics">Ética</a></li>
+        <li><a href="glossary.html"           class="nav-link nav-link--glossary active">Glossary</a></li>
+      
+      </ul>
+      <!-- Botón global de idioma -->
+      <button class="lang-switch" id="langSwitch" aria-label="Cambiar idioma / Switch language">
+        <span class="lang-switch-flag">🇨🇴</span>
+        <span class="lang-switch-text">ES</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="glossary-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+    </div>
+    <div class="glossary-hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span data-es="Bilingüe · Español e Inglés" data-en="Bilingual · Spanish and English">Bilingüe · Español e Inglés</span>
+      </div>
+      <h1 class="hero-title reveal">Technical <em>Glossary</em></h1>
+      <p class="hero-subtitle reveal"
+         data-es="32 términos técnicos aprendidos en Colombia TIC 5.0"
+         data-en="32 technical terms learned at Colombia TIC 5.0">
+        32 términos técnicos aprendidos en Colombia TIC 5.0
+      </p>
+      <div class="glossary-search-wrap reveal">
+        <input type="search" id="glossarySearch" class="glossary-search"
+               data-placeholder-es="Buscar término..."
+               data-placeholder-en="Search term..."
+               placeholder="Buscar término..."
+               aria-label="Buscar en el glosario" />
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TABLA ===== -->
+  <section class="section glossary-section">
+    <div class="container">
+
+      <div class="glossary-stats reveal">
+        <div class="gstat">
+          <span class="gstat-num" id="visibleCount">32</span>
+          <span class="gstat-label" data-es="Términos" data-en="Terms">Términos</span>
+        </div>
+        <div class="gstat">
+          <span class="gstat-num">8</span>
+          <span class="gstat-label" data-es="Categorías" data-en="Categories">Categorías</span>
+        </div>
+        <div class="gstat">
+          <span class="gstat-num">ES/EN</span>
+          <span class="gstat-label" data-es="Bilingüe" data-en="Bilingual">Bilingüe</span>
+        </div>
+      </div>
+
+      <!-- Filtros -->
+      <div class="glossary-filters reveal" role="group" aria-label="Filtrar por categoría">
+        <button class="filter-btn active" data-cat="all"       data-es="Todos"      data-en="All">Todos</button>
+        <button class="filter-btn"        data-cat="ia"        data-es="IA"         data-en="AI">IA</button>
+        <button class="filter-btn"        data-cat="seguridad" data-es="Seguridad"  data-en="Security">Seguridad</button>
+        <button class="filter-btn"        data-cat="cloud"     data-es="Cloud"      data-en="Cloud">Cloud</button>
+        <button class="filter-btn"        data-cat="desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</button>
+        <button class="filter-btn"        data-cat="datos"     data-es="Datos"      data-en="Data">Datos</button>
+        <button class="filter-btn"        data-cat="redes"     data-es="Redes"      data-en="Networks">Redes</button>
+        <button class="filter-btn"        data-cat="gestion"   data-es="Gestión"    data-en="Management">Gestión</button>
+        <button class="filter-btn"        data-cat="animacion" data-es="Animación"  data-en="Animation">Animación</button>
+      </div>
+
+      <div class="glossary-table-wrap reveal">
+        <table class="glossary-table" role="table" aria-label="Glosario técnico bilingüe">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <!-- Encabezados intercambian según idioma -->
+              <th scope="col" class="col-primary"  data-es="Término en Inglés"  data-en="English Term">Término en Inglés</th>
+              <th scope="col" class="col-secondary" data-es="Traducción al Español" data-en="Spanish Translation">Traducción al Español</th>
+              <th scope="col" class="col-def"      data-es="Definición"         data-en="Definition">Definición</th>
+              <th scope="col"                      data-es="Categoría"          data-en="Category">Categoría</th>
+            </tr>
+          </thead>
+          <tbody id="glossaryBody">
+
+            <!-- IA -->
+            <tr data-cat="ia">
+              <td class="gl-num">01</td>
+              <td class="gl-en">Artificial Intelligence</td>
+              <td class="gl-es">Inteligencia Artificial</td>
+              <td class="gl-def-es">Simulación de procesos de inteligencia humana por sistemas informáticos, incluyendo aprendizaje, razonamiento y autocorrección.</td>
+              <td class="gl-def-en" hidden>Simulation of human intelligence processes by computer systems, including learning, reasoning and self-correction.</td>
+              <td><span class="cat-badge cat-ia" data-es="IA" data-en="AI">IA</span></td>
+            </tr>
+            <tr data-cat="ia">
+              <td class="gl-num">02</td>
+              <td class="gl-en">Machine Learning</td>
+              <td class="gl-es">Aprendizaje Automático</td>
+              <td class="gl-def-es">Rama de la IA que permite a los sistemas aprender y mejorar a partir de la experiencia sin ser programados explícitamente.</td>
+              <td class="gl-def-en" hidden>Branch of AI that enables systems to learn and improve from experience without being explicitly programmed.</td>
+              <td><span class="cat-badge cat-ia" data-es="IA" data-en="AI">IA</span></td>
+            </tr>
+            <tr data-cat="ia">
+              <td class="gl-num">03</td>
+              <td class="gl-en">Generative AI</td>
+              <td class="gl-es">IA Generativa</td>
+              <td class="gl-def-es">Sistemas de IA capaces de generar nuevo contenido como texto, imágenes, audio o video basándose en datos de entrenamiento.</td>
+              <td class="gl-def-en" hidden>AI systems capable of generating new content such as text, images, audio or video based on training data.</td>
+              <td><span class="cat-badge cat-ia" data-es="IA" data-en="AI">IA</span></td>
+            </tr>
+            <tr data-cat="ia">
+              <td class="gl-num">04</td>
+              <td class="gl-en">Neural Network</td>
+              <td class="gl-es">Red Neuronal</td>
+              <td class="gl-def-es">Sistema computacional inspirado en el cerebro humano, compuesto por nodos interconectados que procesan información.</td>
+              <td class="gl-def-en" hidden>Computing system inspired by the human brain, composed of interconnected nodes that process information.</td>
+              <td><span class="cat-badge cat-ia" data-es="IA" data-en="AI">IA</span></td>
+            </tr>
+            <tr data-cat="ia">
+              <td class="gl-num">05</td>
+              <td class="gl-en">Large Language Model</td>
+              <td class="gl-es">Modelo de Lenguaje Grande</td>
+              <td class="gl-def-es">Modelo de IA entrenado en enormes cantidades de texto para entender y generar lenguaje humano de manera natural.</td>
+              <td class="gl-def-en" hidden>AI model trained on vast amounts of text data to understand and generate human language naturally.</td>
+              <td><span class="cat-badge cat-ia" data-es="IA" data-en="AI">IA</span></td>
+            </tr>
+
+            <!-- SEGURIDAD -->
+            <tr data-cat="seguridad">
+              <td class="gl-num">06</td>
+              <td class="gl-en">Cybersecurity</td>
+              <td class="gl-es">Ciberseguridad</td>
+              <td class="gl-def-es">Práctica de proteger sistemas, redes y programas de ataques digitales, daños o acceso no autorizado.</td>
+              <td class="gl-def-en" hidden>Practice of protecting systems, networks and programs from digital attacks, damage or unauthorized access.</td>
+              <td><span class="cat-badge cat-seguridad" data-es="Seguridad" data-en="Security">Seguridad</span></td>
+            </tr>
+            <tr data-cat="seguridad">
+              <td class="gl-num">07</td>
+              <td class="gl-en">Zero Trust</td>
+              <td class="gl-es">Confianza Cero</td>
+              <td class="gl-def-es">Marco de seguridad que requiere verificación estricta de identidad para cada persona y dispositivo que intente acceder a recursos.</td>
+              <td class="gl-def-en" hidden>Security framework requiring strict identity verification for every person and device trying to access resources.</td>
+              <td><span class="cat-badge cat-seguridad" data-es="Seguridad" data-en="Security">Seguridad</span></td>
+            </tr>
+            <tr data-cat="seguridad">
+              <td class="gl-num">08</td>
+              <td class="gl-en">Phishing</td>
+              <td class="gl-es">Suplantación de identidad</td>
+              <td class="gl-def-es">Intento fraudulento de obtener información sensible suplantando a una entidad de confianza mediante correos o sitios falsos.</td>
+              <td class="gl-def-en" hidden>Fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity through fake emails or sites.</td>
+              <td><span class="cat-badge cat-seguridad" data-es="Seguridad" data-en="Security">Seguridad</span></td>
+            </tr>
+            <tr data-cat="seguridad">
+              <td class="gl-num">09</td>
+              <td class="gl-en">Ransomware</td>
+              <td class="gl-es">Software de Secuestro</td>
+              <td class="gl-def-es">Software malicioso que cifra los archivos de la víctima y exige un pago para recuperar el acceso a los datos.</td>
+              <td class="gl-def-en" hidden>Malicious software that encrypts victim's files and demands payment for the decryption key to recover access.</td>
+              <td><span class="cat-badge cat-seguridad" data-es="Seguridad" data-en="Security">Seguridad</span></td>
+            </tr>
+            <tr data-cat="seguridad">
+              <td class="gl-num">10</td>
+              <td class="gl-en">Encryption</td>
+              <td class="gl-es">Cifrado</td>
+              <td class="gl-def-es">Proceso de codificar información para que solo las partes autorizadas puedan acceder a ella, protegiéndola de terceros.</td>
+              <td class="gl-def-en" hidden>Process of encoding information so only authorized parties can access it, protecting it from unauthorized third parties.</td>
+              <td><span class="cat-badge cat-seguridad" data-es="Seguridad" data-en="Security">Seguridad</span></td>
+            </tr>
+
+            <!-- CLOUD -->
+            <tr data-cat="cloud">
+              <td class="gl-num">11</td>
+              <td class="gl-en">Cloud Computing</td>
+              <td class="gl-es">Computación en la Nube</td>
+              <td class="gl-def-es">Entrega de servicios de cómputo a través de internet, incluyendo almacenamiento, procesamiento y software.</td>
+              <td class="gl-def-en" hidden>Delivery of computing services over the internet, including storage, processing and software on demand.</td>
+              <td><span class="cat-badge cat-cloud">Cloud</span></td>
+            </tr>
+            <tr data-cat="cloud">
+              <td class="gl-num">12</td>
+              <td class="gl-en">Serverless</td>
+              <td class="gl-es">Sin Servidor</td>
+              <td class="gl-def-es">Modelo de ejecución en la nube donde el proveedor gestiona la infraestructura del servidor automáticamente.</td>
+              <td class="gl-def-en" hidden>Cloud execution model where the cloud provider manages server infrastructure automatically without manual configuration.</td>
+              <td><span class="cat-badge cat-cloud">Cloud</span></td>
+            </tr>
+            <tr data-cat="cloud">
+              <td class="gl-num">13</td>
+              <td class="gl-en">SaaS</td>
+              <td class="gl-es">Software como Servicio</td>
+              <td class="gl-def-es">Modelo de distribución de software donde las aplicaciones se alojan en la nube y se ofrecen a los usuarios por internet.</td>
+              <td class="gl-def-en" hidden>Software distribution model where applications are hosted in the cloud and provided to users over the internet.</td>
+              <td><span class="cat-badge cat-cloud">Cloud</span></td>
+            </tr>
+            <tr data-cat="cloud">
+              <td class="gl-num">14</td>
+              <td class="gl-en">Infrastructure as Code</td>
+              <td class="gl-es">Infraestructura como Código</td>
+              <td class="gl-def-es">Gestión y aprovisionamiento de infraestructura computacional a través de archivos de configuración legibles por máquinas.</td>
+              <td class="gl-def-en" hidden>Managing and provisioning computing infrastructure through machine-readable configuration files instead of manual processes.</td>
+              <td><span class="cat-badge cat-cloud">Cloud</span></td>
+            </tr>
+
+            <!-- DESARROLLO -->
+            <tr data-cat="desarrollo">
+              <td class="gl-num">15</td>
+              <td class="gl-en">Frontend</td>
+              <td class="gl-es">Interfaz de Usuario</td>
+              <td class="gl-def-es">La parte de un sitio web o aplicación con la que los usuarios interactúan directamente, construida con HTML, CSS y JavaScript.</td>
+              <td class="gl-def-en" hidden>The part of a website or application that users interact with directly, built with HTML, CSS and JavaScript.</td>
+              <td><span class="cat-badge cat-desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</span></td>
+            </tr>
+            <tr data-cat="desarrollo">
+              <td class="gl-num">16</td>
+              <td class="gl-en">Backend</td>
+              <td class="gl-es">Lógica del Servidor</td>
+              <td class="gl-def-es">El lado del servidor de una aplicación web que maneja la lógica de negocio, bases de datos y gestión del servidor.</td>
+              <td class="gl-def-en" hidden>The server-side of a web application, handling business logic, databases and server management behind the scenes.</td>
+              <td><span class="cat-badge cat-desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</span></td>
+            </tr>
+            <tr data-cat="desarrollo">
+              <td class="gl-num">17</td>
+              <td class="gl-en">API</td>
+              <td class="gl-es">Interfaz de Programación</td>
+              <td class="gl-def-es">Conjunto de reglas y protocolos que permite que diferentes aplicaciones de software se comuniquen entre sí.</td>
+              <td class="gl-def-en" hidden>Set of rules and protocols that allows different software applications to communicate and share data with each other.</td>
+              <td><span class="cat-badge cat-desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</span></td>
+            </tr>
+            <tr data-cat="desarrollo">
+              <td class="gl-num">18</td>
+              <td class="gl-en">Responsive Design</td>
+              <td class="gl-es">Diseño Responsivo</td>
+              <td class="gl-def-es">Enfoque de diseño web que hace que las páginas se vean bien en diferentes tamaños de pantalla y dispositivos.</td>
+              <td class="gl-def-en" hidden>Web design approach that makes web pages render well on different screen sizes and devices automatically.</td>
+              <td><span class="cat-badge cat-desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</span></td>
+            </tr>
+            <tr data-cat="desarrollo">
+              <td class="gl-num">19</td>
+              <td class="gl-en">Version Control</td>
+              <td class="gl-es">Control de Versiones</td>
+              <td class="gl-def-es">Sistema que registra los cambios en archivos a lo largo del tiempo para poder recuperar versiones anteriores cuando se necesite.</td>
+              <td class="gl-def-en" hidden>System that records changes to files over time so you can recall specific versions later when needed.</td>
+              <td><span class="cat-badge cat-desarrollo" data-es="Desarrollo" data-en="Development">Desarrollo</span></td>
+            </tr>
+
+            <!-- DATOS -->
+            <tr data-cat="datos">
+              <td class="gl-num">20</td>
+              <td class="gl-en">Big Data</td>
+              <td class="gl-es">Grandes Datos</td>
+              <td class="gl-def-es">Conjuntos de datos extremadamente grandes que requieren herramientas y técnicas especiales para analizarlos y extraer valor.</td>
+              <td class="gl-def-en" hidden>Extremely large datasets that require special tools and techniques to analyze and extract meaningful value from them.</td>
+              <td><span class="cat-badge cat-datos" data-es="Datos" data-en="Data">Datos</span></td>
+            </tr>
+            <tr data-cat="datos">
+              <td class="gl-num">21</td>
+              <td class="gl-en">Data Mining</td>
+              <td class="gl-es">Minería de Datos</td>
+              <td class="gl-def-es">Proceso de descubrir patrones y conocimientos útiles en grandes cantidades de datos mediante algoritmos estadísticos.</td>
+              <td class="gl-def-en" hidden>Process of discovering patterns and useful knowledge from large amounts of data using statistical algorithms.</td>
+              <td><span class="cat-badge cat-datos" data-es="Datos" data-en="Data">Datos</span></td>
+            </tr>
+            <tr data-cat="datos">
+              <td class="gl-num">22</td>
+              <td class="gl-en">Data Lake</td>
+              <td class="gl-es">Lago de Datos</td>
+              <td class="gl-def-es">Repositorio centralizado que almacena grandes cantidades de datos en su formato nativo hasta que sean necesarios para su análisis.</td>
+              <td class="gl-def-en" hidden>Centralized repository that holds vast amounts of raw data in its native format until needed for analysis.</td>
+              <td><span class="cat-badge cat-datos" data-es="Datos" data-en="Data">Datos</span></td>
+            </tr>
+            <tr data-cat="datos">
+              <td class="gl-num">23</td>
+              <td class="gl-en">Data Privacy</td>
+              <td class="gl-es">Privacidad de Datos</td>
+              <td class="gl-def-es">El derecho de las personas a controlar cómo se recopila, usa y comparte su información personal por parte de organizaciones.</td>
+              <td class="gl-def-en" hidden>The right of individuals to control how their personal information is collected, used and shared by organizations.</td>
+              <td><span class="cat-badge cat-datos" data-es="Datos" data-en="Data">Datos</span></td>
+            </tr>
+
+            <!-- REDES -->
+            <tr data-cat="redes">
+              <td class="gl-num">24</td>
+              <td class="gl-en">Internet of Things</td>
+              <td class="gl-es">Internet de las Cosas</td>
+              <td class="gl-def-es">Red de dispositivos físicos conectados a internet que recopilan y comparten datos entre sí de forma automática.</td>
+              <td class="gl-def-en" hidden>Network of physical devices connected to the internet, automatically collecting and sharing data with each other.</td>
+              <td><span class="cat-badge cat-redes" data-es="Redes" data-en="Networks">Redes</span></td>
+            </tr>
+            <tr data-cat="redes">
+              <td class="gl-num">25</td>
+              <td class="gl-en">Bandwidth</td>
+              <td class="gl-es">Ancho de Banda</td>
+              <td class="gl-def-es">Velocidad máxima de transferencia de datos a través de una conexión de red en un período de tiempo determinado.</td>
+              <td class="gl-def-en" hidden>Maximum rate of data transfer across a network connection during a specific period of time.</td>
+              <td><span class="cat-badge cat-redes" data-es="Redes" data-en="Networks">Redes</span></td>
+            </tr>
+            <tr data-cat="redes">
+              <td class="gl-num">26</td>
+              <td class="gl-en">Firewall</td>
+              <td class="gl-es">Cortafuegos</td>
+              <td class="gl-def-es">Dispositivo de seguridad de red que monitorea y controla el tráfico entrante y saliente según reglas de seguridad predefinidas.</td>
+              <td class="gl-def-en" hidden>Network security device that monitors and controls incoming and outgoing network traffic according to predefined security rules.</td>
+              <td><span class="cat-badge cat-redes" data-es="Redes" data-en="Networks">Redes</span></td>
+            </tr>
+
+            <!-- GESTIÓN -->
+            <tr data-cat="gestion">
+              <td class="gl-num">27</td>
+              <td class="gl-en">Digital Transformation</td>
+              <td class="gl-es">Transformación Digital</td>
+              <td class="gl-def-es">Integración de tecnología digital en todas las áreas de un negocio, cambiando fundamentalmente cómo opera y entrega valor.</td>
+              <td class="gl-def-en" hidden>Integration of digital technology into all areas of a business, fundamentally changing how it operates and delivers value.</td>
+              <td><span class="cat-badge cat-gestion" data-es="Gestión" data-en="Management">Gestión</span></td>
+            </tr>
+            <tr data-cat="gestion">
+              <td class="gl-num">28</td>
+              <td class="gl-en">Agile Methodology</td>
+              <td class="gl-es">Metodología Ágil</td>
+              <td class="gl-def-es">Enfoque iterativo para la gestión de proyectos y el desarrollo de software que ayuda a los equipos a entregar valor más rápido.</td>
+              <td class="gl-def-en" hidden>Iterative approach to project management and software development that helps teams deliver value faster and adapt to change.</td>
+              <td><span class="cat-badge cat-gestion" data-es="Gestión" data-en="Management">Gestión</span></td>
+            </tr>
+            <tr data-cat="gestion">
+              <td class="gl-num">29</td>
+              <td class="gl-en">Interoperability</td>
+              <td class="gl-es">Interoperabilidad</td>
+              <td class="gl-def-es">Capacidad de diferentes sistemas y organizaciones para trabajar juntos e intercambiar información de manera efectiva.</td>
+              <td class="gl-def-en" hidden>Ability of different systems and organizations to work together and exchange information effectively and seamlessly.</td>
+              <td><span class="cat-badge cat-gestion" data-es="Gestión" data-en="Management">Gestión</span></td>
+            </tr>
+            <tr data-cat="gestion">
+              <td class="gl-num">30</td>
+              <td class="gl-en">Scalability</td>
+              <td class="gl-es">Escalabilidad</td>
+              <td class="gl-def-es">Capacidad de un sistema para manejar mayor carga de trabajo agregando recursos de manera proporcional a la demanda.</td>
+              <td class="gl-def-en" hidden>Ability of a system to handle increased workload by adding resources proportionally to meet growing demand.</td>
+              <td><span class="cat-badge cat-gestion" data-es="Gestión" data-en="Management">Gestión</span></td>
+            </tr>
+
+            <!-- ANIMACIÓN -->
+            <tr data-cat="animacion">
+              <td class="gl-num">31</td>
+              <td class="gl-en">Motion Capture</td>
+              <td class="gl-es">Captura de Movimiento</td>
+              <td class="gl-def-es">Tecnología que registra los movimientos de objetos o personas y los traduce en modelos digitales tridimensionales.</td>
+              <td class="gl-def-en" hidden>Technology that records the movements of objects or people and translates them into three-dimensional digital models.</td>
+              <td><span class="cat-badge cat-animacion" data-es="Animación" data-en="Animation">Animación</span></td>
+            </tr>
+            <tr data-cat="animacion">
+              <td class="gl-num">32</td>
+              <td class="gl-en">Rendering</td>
+              <td class="gl-es">Renderizado</td>
+              <td class="gl-def-es">Proceso de generar una imagen fotorrealista o no fotorrealista a partir de un modelo 2D o 3D utilizando software de computadora.</td>
+              <td class="gl-def-en" hidden>Process of generating a photorealistic or non-photorealistic image from a 2D or 3D model using computer software.</td>
+              <td><span class="cat-badge cat-animacion" data-es="Animación" data-en="Animation">Animación</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <p class="glossary-empty" id="glossaryEmpty" hidden
+         data-es="No se encontraron términos. Intenta otra búsqueda."
+         data-en="No terms found. Try a different search.">
+        No se encontraron términos. Intenta otra búsqueda.
+      </p>
+
+      <div class="glossary-back reveal">
+        <a href="index.html" class="btn btn--primary"
+           data-es="← Volver al inicio"
+           data-en="← Back to Home">← Volver al inicio</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-bg" aria-hidden="true">
+      <div class="footer-orb footer-orb--1"></div>
+      <div class="footer-orb footer-orb--2"></div>
+    </div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">ColTIC <span>5.0</span></span>
+        </div>
+        <p class="footer-tagline"
+           data-es="Glosario técnico bilingüe — Colombia TIC 5.0"
+           data-en="Bilingual technical glossary — Colombia TIC 5.0">
+          Glosario técnico bilingüe — Colombia TIC 5.0
+        </p>
+      </div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <p class="footer-author">
+            <span data-es="Desarrollado por" data-en="Developed by">Desarrollado por</span>
+            <strong>Juan Sebastian Diaz Santisteban</strong>
+          </p>
+          <p class="footer-program">ANÁLISIS Y DESARROLLO DE SOFTWARE · SENA ADSO · 2026</p>
+        </div>
+      </div>
+      <p class="footer-copy"
+         data-es="© 2026 · Página realizada con fines académicos · Colombia TIC 5.0"
+         data-en="© 2026 · Page created for academic purposes · Colombia TIC 5.0">
+        © 2026 · Página realizada con fines académicos · Colombia TIC 5.0
+      </p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
